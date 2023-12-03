@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- HEADER START -->
-    <header>
+    <header class="container">
         <!-- NAVBAR START -->
         <nav class="navbar bg-body-tertiary fixed-top">
           <div class="container-fluid">
@@ -31,8 +31,15 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    <a class="nav-link active" aria-current="page" href="#carouselPictures">Accueil</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#projects">Nos projets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#links">Nos réseaux</a>
+                  </li>
+
                   <li class="nav-item">
                     <a class="nav-link" href="#">Nos campagnes</a> <!-- Lien vers site global-->
                   </li>
@@ -66,41 +73,35 @@
     <!--HEADER END-->
     <!-- CAROUSEL START -->
     <section id="carouselPictures">
-      <div id="carousel" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+      <div id="carouselP" class="carousel slide">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img src="/Banque images/Eoliennes.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item active text-center">
+            <img src="./Banque images/Eoliennes.jpg" class="d-block w-100" alt="Eoliennes sur fond bleu">
+            <div class="carousel-caption">
               <h2>Rejoignez notre mouvement pour l'énergie propre !</h2>
-              <p> Manifestez avec nous pour soutenir l'utilisation des éoliennes et promouvoir une énergie propre et durable.</p>
+              <p>Manifestez avec nous pour soutenir l'utilisation des éoliennes et promouvoir une énergie propre et durable.</p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="/Banque images/ManifSlogan2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-white">
-              <h3>Exprimez votre voix</h3>
-              <p>Rejoignez nos manifestations et contribuez à faire entendre notre message pour un monde plus vert.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/Banque images/Bâteau greenpeace.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-white">
-              <h4>Soutenez nos campagnes marines</h4>
+          <div class="carousel-item text-center">
+            <img src="./Banque images/Bâteau greenpeace.jpg" class="d-block w-100" alt="Bâteau greenpeace sur un port">
+            <div class="carousel-caption">
+              <h3>Soutenez nos campagnes marines</h3>
               <p>Embarquez avec Greenpeace et aidez-nous à protéger les océans et la vie marine à bord de nos bateaux.</p>
             </div>
           </div>
+          <div class="carousel-item text-center">
+            <img src="./Banque images/ManifSlogan2.jpg" class="d-block w-100" alt="Une manifestation avec des pancartes de manifestants">
+            <div class="carousel-caption">
+              <h4>Exprimez votre voix</h4>
+              <p>Rejoignez nos manifestations et contribuez à faire entendre notre message pour un monde plus vert.</p>
+            </div>
+          </div>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselP" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselP" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -183,7 +184,7 @@
         </section>
           <!--social media end-->
           <!--link start-->
-        <section class="links">
+        <section id="links">
           <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -191,7 +192,7 @@
                   <i class="fas fa-leaf me-3 text-success"></i>GreenPeace
                 </h10>
                 <p>
-                  L'association mène ses activités à l'échelle nationale, régionale, internationale, en utilisant des actions juridiques, des actions devant les administrations, et en coopérant avec d'autres associations Greenpeace et des organisations partageant des objectifs similaires.
+                  L'association mène ses activités à l'échelle nationale, régionale, internationale.
                 </p>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -203,6 +204,7 @@
             </div>
           </div>
         </section>
+        <!-- link end -->
         <!-- copyright start -->
         <div class="text-center p-4 bg-success">
           © 2023 Copyright:
