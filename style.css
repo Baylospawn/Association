@@ -1,0 +1,11 @@
+.carousel-caption-title {
+    background-color: #28a745; /* Couleur verte de Bootstrap */
+    color: #fff; /* Texte blanc */
+    padding: 10px; /* Espace autour du texte */
+  }
+
+.carousel-caption-text {
+    background-color: #28a745; /* Couleur verte de Bootstrap */
+    color: #fff; /* Texte blanc */
+    padding: 10px; /* Espace autour du texte */
+  }
